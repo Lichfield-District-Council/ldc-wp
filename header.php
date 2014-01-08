@@ -71,25 +71,35 @@
 
 </head>
 <body>
-<!-- ########## MAIN STRUCTURE ######### -->
-<div id="container">
-<div id="mobile_name">Lichfield District Council</div>
-<div id="mast">
+	<!-- ########## MAIN STRUCTURE ######### -->
+	<div id="container">
+		<div id="mobile_name">Lichfield District Council</div>
+		<div id="mast">
+			<p class="skip">
+				<a accesskey="s" title="Skip to page content, access key S" href="#main" rel="nofollow">Jump to content</a> - 
+				<a accesskey="n" title="Skip to main navigation, access key N" href="#main-nav" rel="nofollow">Jump to navigation</a> - 
+			</p>
+			<form action="http://www.lichfielddc.gov.uk/site/custom_scripts/google_results.php" method="get" id="search">
+				<fieldset><a title="Create a specific detailed search" href="http://www.lichfielddc.gov.uk/site/scripts/search_index.php">Need help finding something?</a>
+				<label for="SearchSite">Search this site</label>
+				<input type="text" size="18" maxlength="40" class="field ui-autocomplete-input" name="q" id="SearchSite" value="What are you looking for?" style="color:#666" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+				<input type="submit" value="Search" class="button"></fieldset>
+			</form>
+		
+			<div class="pseudoH1">
+				<a href="http://www.lichfielddc.gov.uk/site/index.php"><span>Lichfield District Council</span></a> <span class="blogtitle"><?php bloginfo('name'); ?></span>
+			</div>
+		
+			<p class="about">Making it easy to <a href="http://www.lichfielddc.gov.uk/site/scripts/az_home.php" class="tt">access council services</a>, <a href="http://www.lichfielddc.gov.uk/reportit" class="tt">report problems</a> in your area, view <a href="http://www.lichfielddc.gov.uk/planning" class="tt">planning applications</a>, find out <a href="http://www.lichfielddc.gov.uk/whatsgoingon" class="tt">what's going on locally</a>, <a href="http://www.lichfielddc.gov.uk/voiceit">have your say</a> on local issues, and much more.</p>
+			
+			<a name="main-nav"></a>
+			<h2>Navigation</h2>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'fallback_cb' => 'ldc_fallback_cb' ) ); ?>
+			
+			<div class="clear"></div>
+		</div>
 
-
-
-	<div class="pseudoH1">
-		<a href="http://www.lichfielddc.gov.uk/site/index.php"><span>Lichfield District Council</span></a> <span class="blogtitle"><?php bloginfo('name'); ?></span> 
-	</div>
-
-	
-	<a name="main-nav"></a>
-	<h2>Navigation</h2>
-	<?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'fallback_cb' => 'ldc_fallback_cb' ) ); ?>
-	
-	<div class="clear"></div>
-</div>
-	<div id="page_wrap">
-		<div id="mainContent">
-			<div id="content" class="withWidth"><!-- Include "withWidth" class for templates using the column -->
-				<a name="main"></a>
+		<div id="page_wrap">
+			<div id="mainContent">
+				<div id="content" class="withWidth"><!-- Include "withWidth" class for templates using the column -->
+					<a name="main"></a>
