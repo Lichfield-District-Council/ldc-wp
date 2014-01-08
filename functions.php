@@ -34,4 +34,35 @@ if ( function_exists ('register_sidebar')) {
     	'after_title' => '</h2>'
     )); 
 } 
+
+
+/**
+ * Register the main navigation menu for use in the dashboard
+ */
+function ldc_primary_nav() {
+	register_nav_menu('primary-menu',__( 'Primary Menu' ));
+}
+add_action( 'init', 'ldc_primary_nav' );
+
+/**
+ * Fallback function for the main nav menu
+ * @param array $args The arguments that were passed to wp_nav_menu
+ */
+function ldc_fallback_cb($args){
+	?><ul>
+	<li><a href="<?php echo site_url(); ?>">Home</a></li>
+	<?php wp_list_pages(array(
+		'sort_column' => 'menu_order',
+		'title_li' => '',
+		'exclude' => 121,
+		'depth' => 1
+	)); ?>
+	</ul><?php
+}
+
+function ldc_enqueue_styles() {
+	wp_enqueue_style( 'ldc-events-manager', get_template_directory_uri().'/events-manager.css' );
+}
+add_action( 'wp_enqueue_scripts', 'ldc_enqueue_styles' );
+
 ?>

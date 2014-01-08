@@ -1,0 +1,30 @@
+table.fullcalendar {
+	width: 100%;
+}
+
+.events-table {
+	border: 0;
+}
+
+.events-table thead tr {
+	background: #973298;
+	border-bottom: 1px solid #fff;
+}
+
+.events-table thead tr th {
+	background: #973298;
+	color: #fff;
+	padding: 0.5em;
+}
+
+.events-table thead tr th.event-description {
+	width: 70%;
+}
+
+.events-table tbody tr {
+	border-bottom: 1px solid #fff;
+}
+
+.events-table tbody tr td {
+	padding: 0 0.5em;
+}

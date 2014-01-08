@@ -85,11 +85,7 @@
 	
 	<a name="main-nav"></a>
 	<h2>Navigation</h2>
-	<ul>
-	<li><a href="<?php bloginfo('url'); ?>">Home</a></li>
-	<?php wp_list_pages('sort_column=menu_order&title_li=&exclude=121'); ?> 
-	<?php //wp_list_categories('sort_column=menu_order&title_li=&depth=1'); ?>  
-	</ul><!-- end navigation -->	
+	<?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'fallback_cb' => 'ldc_fallback_cb' ) ); ?>
 	
 	<div class="clear"></div>
 </div>
