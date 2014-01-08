@@ -3,19 +3,6 @@
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
-	<?php if ( function_exists('yoast_breadcrumb') ) {
-	$breadcrumbs = yoast_breadcrumb("","",false);
-	$breadcrumbs = explode(",", $breadcrumbs);
-	} ?>
-	
-	<ul id="breadcrumb">
-	<?php
-	foreach ($breadcrumbs as $breadcrumb) {
-	?>
-	<li><?php echo $breadcrumb; ?></li>
-	<?php } ?>
-	</ul>
-
 	<h1><?php the_title(); ?></h1>
 	
 	<div class="item">

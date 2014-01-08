@@ -6,18 +6,6 @@ get_header();
 ?>
 <div id="content">
 <?php the_post() ?>
-<?php if ( function_exists('yoast_breadcrumb') ) {
-	$breadcrumbs = yoast_breadcrumb("","",false);
-	$breadcrumbs = explode(",", $breadcrumbs);
-	array_shift($breadcrumbs);
-	array_shift($breadcrumbs);
-} ?>
-<ul id="breadcrumb">
-<li><a href="http://www2.lichfielddc.gov.uk/data">Open Data</a></li>
-<li><?php echo $breadcrumbs[0]; ?></li>
-<li><?php echo $breadcrumbs[1]; ?></li>
-<li class="bc_end"><?php echo $breadcrumbs[2]; ?></li>
-</ul>
 <h1><?php the_title() ?></h1>
 <?php the_content(); ?>
 <h2>Resources</h2>

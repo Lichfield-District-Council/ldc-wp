@@ -6,13 +6,6 @@ get_header();
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="item">
 	
-
-<ul id="breadcrumb">
-<li><a href="<?php bloginfo('url'); ?>">Home</a></li>
-
-<li class="bc_end"><?php the_title(); ?></li>
-</ul>
-
 	<h1><?php the_title(); ?></a></h1>
 
 	<?php the_content(); ?>

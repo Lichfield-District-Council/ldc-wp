@@ -94,7 +94,22 @@
 			
 			<a name="main-nav"></a>
 			<h2>Navigation</h2>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary-menu', 'fallback_cb' => 'ldc_fallback_cb' ) ); ?>
+			<ul>
+				<li><a href="http://www.lichfielddc.gov.uk" title="View the home page">Home</a></li>
+				<li><a href="http://www.lichfielddc.gov.uk/site/scripts/az_home.php">A-Z</a></li>
+				<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents_index.php">Council services</a></li>
+				<li><a href="http://www.lichfielddc.gov.uk/site/custom_scripts/newsblogindex.php">News</a></li>
+				<li><a href="http://www.lichfielddc.gov.uk/site/scripts/contact.php">Contacts</a></li>
+				<li><a href="http://www.lichfielddc.gov.uk/site/scripts/location.php">Opening hours and location</a></li>
+				<li><a href="http://www2.lichfielddc.gov.uk/myarea/">My area</a>
+				</li>
+				<li><a href="http://www2.lichfielddc.gov.uk/myarea/map/">Online map</a></li>
+				<li><a href="http://www.lichfielddc.gov.uk/epay" id="myarea">Pay online</a></li>
+				<li class="sign-in">
+					<a href="https://www.lichfielddc.gov.uk/site/index.php?sign_in=true">Sign in</a> or
+					<a href="https://www.lichfielddc.gov.uk/site/scripts/register.php">Register</a>
+				</li>
+			</ul>
 			
 			<div class="clear"></div>
 		</div>
@@ -103,3 +118,9 @@
 			<div id="mainContent">
 				<div id="content" class="withWidth"><!-- Include "withWidth" class for templates using the column -->
 					<a name="main"></a>
+					<ul id="breadcrumb">
+						<li><a href="http://www.lichfielddc.gov.uk/site/">Home</a></li>
+						<?php if ( is_front_page() ){ ?><li><?php echo bloginfo('name'); ?></li>
+						<?php } else { ?><li><a href="<?php echo bloginfo('url'); ?>"><?php echo bloginfo('name'); ?></a></li>
+						<li class="bc_end"><span><?php wp_title(''); ?></span></li><?php } ?>
+					</ul>
