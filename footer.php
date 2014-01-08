@@ -1,8 +1,6 @@
 			</div><!-- End content -->
 		</div>
 		
-		<?php get_sidebar (); ?>
-
 		<br class="clear" />
 		<br class="clear" />
 </div><!-- end of page_wrap -->
@@ -11,19 +9,17 @@
 			<h2>Browse council information on...</h2>
 
 			<ul>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100001">Advice and benefits</a></li>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100002">Business</a></li>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100003">Community and living</a></li>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100004">Council and democracy</a></li>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100005">Education and learning</a></li>
-
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100006">Environment and planning</a></li>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100007">Housing</a></li>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100008">Jobs and careers</a></li>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100009">Leisure and culture</a></li>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100010">Health and social care</a></li>
-			<li><a href="http://www.lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100011">Transport and streets</a></li>
-
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100001">Benefits and housing advice</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100002">Business</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100003">Community and living</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100004">Council and democracy</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100005">Education and learning</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100006">Environment and planning</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100010">Health and social care</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100007">Housing</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100008">Jobs and careers</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100009">Leisure and culture</a></li>
+				<li><a href="http://lichfielddc.gov.uk/site/scripts/documents.php?categoryID=100011">Transport and streets</a></li>
 			</ul>
 		</li>
 		<li class="contact vcard">
@@ -58,14 +54,16 @@
 	</ul><!-- end contactbox -->
 
 	<div id="footer">
-	<img src="http://www.lichfielddc.gov.uk/site/images/footer-logo.gif" alt="Lichfield District Council" />
-	<p class="addNav"><a href="http://www.lichfielddc.gov.uk/site/custom_scripts/newsblog.php?id=304#mast">Jump to the top</a></p>
-	<p class="addNav"><a href="http://www.lichfielddc.gov.uk/site/scripts/terms.php">Terms and Disclaimer</a> - <a href="http://www.lichfielddc.gov.uk/site/scripts/accessibility.php">Accessibility Statement</a> - <a href="http://www.lichfielddc.gov.uk/site/scripts/website_statistics.php">Websites statistics</a> - <a accesskey="3" href="http://www.lichfielddc.gov.uk/site/scripts/site_map.php">Site map</a> - Lichfield District Council &copy; 2010</p>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/BC-3-Stars-M.png" id="bcstar" alt="We received 3 stars in the Society of IT Managers' annual Better Connected report">
+		<a href="http://data.gov.uk/publisher/lichfield-district-council" class="govuk"><img src="<?php echo get_template_directory_uri(); ?>/images/gov-uk.jpg" id="govuk" alt="GOV.UK"></a>
+		<img src="http://www.lichfielddc.gov.uk/site/images/footer-logo.gif" alt="Lichfield District Council" />
+		<p class="addNav"><a href="#mast">Jump to the top</a></p>
+		<p class="addNav"><a href="http://www.lichfielddc.gov.uk/site/scripts/terms.php">Terms and Disclaimer</a> - <a href="http://www.lichfielddc.gov.uk/site/scripts/accessibility.php">Accessibility</a> - <a href="http://www.lichfielddc.gov.uk/info/200116/websites/1524/cookies">Cookies</a> - <a accesskey="3" href="http://www.lichfielddc.gov.uk/site/scripts/site_map.php">Site map</a> - Lichfield District Council &copy; <?php echo date_i18n('Y'); ?></p>
 
-	<p class="addNav">Made with <a href="http://validator.w3.org/">XHTML</a> and <a href="http://jigsaw.w3.org/css-validator/">CSS</a> to <a href="http://www.w3.org/WAI/WCAG1AA-Conformance">WAI-AA</a>. <a href="http://www.icra.org">ICRA</a> rated. Powered by Jadu <a href="http://www.jadu.co.uk" >Content Management</a>.</p>
+		<p class="addNav">Made with <a href="http://validator.w3.org/">XHTML</a> and <a href="http://jigsaw.w3.org/css-validator/">CSS</a> to <a href="http://www.w3.org/WAI/WCAG1AA-Conformance">WAI-AA</a>. Powered by <a href="http://wordpress.org">WordPress</a>.</p>
 
 	
-	<p class="addNav"><a href="http://www.direct.gov.uk">www.direct.gov.uk</a> - A Beacon Authority</p>
+		<p class="addNav"><a href="http://www.gov.uk">www.gov.uk</a> - A Beacon Authority</p>
 
 <p class="hidden">
 	<a accesskey="1" href="http://www.lichfielddc.gov.uk">Homepage</a> / 

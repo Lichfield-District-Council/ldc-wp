@@ -6,6 +6,10 @@ Author: Stuart Harrison & Philip John
 Version: 1.1
 */
 
+div#mainContent div.withWidth {
+	width: 100%;
+}
+
 .pseudoH1 {
 	margin-bottom: 17px !important;
 	position: relative;
