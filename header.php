@@ -87,7 +87,7 @@
 			</form>
 		
 			<div class="pseudoH1">
-				<a href="http://www.lichfielddc.gov.uk/site/index.php"><span>Lichfield District Council</span></a> <span class="blogtitle"><?php bloginfo('name'); ?></span>
+				<a href="http://www.lichfielddc.gov.uk/site/index.php"><span>Lichfield District Council</span></a> <!--span class="blogtitle"><?php bloginfo('name'); ?></span-->
 			</div>
 		
 			<p class="about">Making it easy to <a href="http://www.lichfielddc.gov.uk/site/scripts/az_home.php" class="tt">access council services</a>, <a href="http://www.lichfielddc.gov.uk/reportit" class="tt">report problems</a> in your area, view <a href="http://www.lichfielddc.gov.uk/planning" class="tt">planning applications</a>, find out <a href="http://www.lichfielddc.gov.uk/whatsgoingon" class="tt">what's going on locally</a>, <a href="http://www.lichfielddc.gov.uk/voiceit">have your say</a> on local issues, and much more.</p>

@@ -1,9 +1,11 @@
-			</div><!-- End content -->
-		</div>
+			</div><!-- End #content -->
+		</div><!-- End #mainContent -->
+		
+		<?php get_sidebar(); ?>
 		
 		<br class="clear" />
 		<br class="clear" />
-</div><!-- end of page_wrap -->
+	</div><!-- end of page_wrap -->
 	<ul class="contactbox">
 		<li class="taxonomy">
 			<h2>Browse council information on...</h2>
