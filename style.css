@@ -160,3 +160,7 @@ table th, table td {
 #breadcrumb strong {
 	font-weight: normal;
 	}
+	
+p, address {
+	padding: 0 0 1em;
+}
